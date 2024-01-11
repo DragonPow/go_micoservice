@@ -1,6 +1,8 @@
 package service
 
 import (
+	"fmt"
+
 	"github.com/gin-gonic/gin"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/postgres"
@@ -20,7 +22,10 @@ func InitService() {
 	defer db.Close()
 
 	// Start the server
-	r.Run(":8080")
+	err = r.Run(":8080")
+	if err != nil {
+		fmt.Println(err)
+	}
 }
 
 func main() {
