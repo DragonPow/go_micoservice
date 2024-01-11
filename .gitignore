@@ -12,48 +12,39 @@
 *.out
 
 # Dependency directories (remove the comment below to include it)
-# vendor/
+vendor/
 
-# IDE files
+# IDE/Editor folders
 .idea
+*.swp
+*.swo
+*.swl
+*.swn
+.vscode/
 
-# The _build directory
-_build
+# Bazel build files
+bazel-*
+/.bazelrc
+/.bazelversion
+/.tl-compiler
+
+# Docker files
+*.log
+
+# GoLand files
+.idea/
 
 # Log files
 *.log
 
-# Node.js packages
-node_modules
+# Node modules - might be generated during front-end development
+node_modules/
 
-# VS Code files
-.vscode
-
-# GoLand files
-*.iml
-.idea/
-
-# Compiled Object files, Static and Dynamic libs (Shared Objects)
-*.o
-*.a
-*.s
-
-# Folders
-_obj
-_test
-
-# Architecture specific extensions/prefixes
-*.[568vq]
-[568vq].out
-
-*.cgo1.go
-*.cgo2.c
-_cgo_defun.c
-_cgo_gotypes.go
-_cgo_export.*
-
-_testmain.go
-
-*.exe
-*.test
-*.prof
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
