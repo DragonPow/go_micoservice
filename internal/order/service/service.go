@@ -24,7 +24,6 @@ func InitService() {
 	// Start the server
 	err = r.Run(":8080")
 	if err != nil {
-		fmt.Print("Failed to start the server")
 		fmt.Println(err)
 	}
 }
